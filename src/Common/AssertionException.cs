@@ -18,10 +18,10 @@ namespace Assertions
         {
         }
 
-        protected AssertionException(
-            SerializationInfo info,
-            StreamingContext context) : base(info, context)
-        {
-        }
+        // protected AssertionException(
+        //     SerializationInfo info,
+        //     StreamingContext context) : base(info, context)
+        // {
+        // }
     }
 }
