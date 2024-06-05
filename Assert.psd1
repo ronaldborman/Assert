@@ -4,7 +4,7 @@
 ModuleToProcess = 'Assert.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.0'
+ModuleVersion = '0.9.6'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -19,7 +19,7 @@ Author = 'nohwnd'
 CompanyName = 'None'
 
 # Copyright statement for this module
-Copyright = '(c) 2017 nohwnd. All rights reserved.'
+Copyright = '(c) 2024 nohwnd. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'Alternative assertions for Pester.'
@@ -119,13 +119,16 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://github.com/nohwnd/Assertions'
+        ProjectUri = 'https://github.com/nohwnd/Assert'
 
         # A URL to an icon representing this module.
         # IconUri = ''
 
         # ReleaseNotes of this module
         # ReleaseNotes = ''
+
+        # Prerelease string of this module
+        Prerelease   = 'rc1'
 
     } # End of PSData hashtable
 
