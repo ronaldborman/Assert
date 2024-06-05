@@ -4,7 +4,7 @@
 ModuleToProcess = 'Assert.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.9.6'
+ModuleVersion = '0.0.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -126,10 +126,6 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         # ReleaseNotes = ''
-
-        # Prerelease string of this module
-        Prerelease   = 'rc1'
-
     } # End of PSData hashtable
 
 } # End of PrivateData hashtable
