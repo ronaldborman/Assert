@@ -1,6 +1,6 @@
 # 📖 This repository moved to Pester. 
 
-The assertions from this repository were moved to [Pester](https://github.com/pester/pester) and will be shipped together with Pester 6 and newer. This repository is now readonly, all new development should be done in Pester repository instead.
+The assertions from this repository were moved to [Pester](https://github.com/pester/pester) and will be shipped together with Pester 6 and newer. You can still file issues here, but no new features will be added, all new development will be done in Pester repository instead.
 ----
 
 # Assert
