@@ -658,7 +658,9 @@ function Compare-Equivalent {
 function Assert-Equivalent {
     [CmdletBinding()]
     param(
+        [Parameter(Position = 1, ValueFromPipeline = $true)]
         $Actual,
+        [Parameter(Position = 0, Mandatory)]
         $Expected,
         $Options = (Get-EquivalencyOption),
         [Switch] $StrictOrder
