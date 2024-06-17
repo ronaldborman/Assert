@@ -481,13 +481,13 @@ InModuleScope -ModuleName Assert {
         }
 
         It "Can be passed pipeline input and a named parameter" {
-            { 1 | Assert-Equivalent -Expected 1} | Should -Not -Throw
-            { 1 | Assert-Equivalent -Expected 2} | Verify-AssertionFailed
+            1 | Assert-Equivalent -Expected 1
+            { 1 | Assert-Equivalent -Expected 2 } | Verify-AssertionFailed
         }
 
         It "Can be passed pipeline input and a positional parameter" {
-            { 1 | Assert-Equivalent 1} | Should -Not -Throw
-            { 1 | Assert-Equivalent 2} | Verify-AssertionFailed
+            1 | Assert-Equivalent 1
+            { 1 | Assert-Equivalent 2 } | Verify-AssertionFailed
         }
     }
 }
