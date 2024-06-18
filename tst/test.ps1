@@ -20,10 +20,11 @@ try {
             Install-PackageProvider -Name NuGet -MinimumVersion $minimumNugetProviderVersion -Force
         }
 
-        $minimumPesterVersion = "5.3.0-alpha4"
-        if (-not (Get-Module -All | Where-Object { $_.Name -eq "Pester" -and $_.Version -ge $minimumPesterVersion })) {
+        $minimumPesterVersion = "5.5.0"
+        $maximumPesterVersion = "5.99.99"
+        if (-not (Get-Module -All | Where-Object { $_.Name -eq "Pester" -and $_.Version -ge $minimumPesterVersion -and $_.Version -le $maximumPesterVersion })) {
             "Installing Pester."
-            Install-Module -Name Pester -Force -MinimumVersion $minimumPesterVersion -Scope CurrentUser -AllowPreRelease
+            Install-Module -Name Pester -Force -MinimumVersion $minimumPesterVersion -MaximumVersion $maximumPesterVersion -Scope CurrentUser -AllowPreRelease
         }
     }
     
